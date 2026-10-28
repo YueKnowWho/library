@@ -36,10 +36,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 /*Style layout*/
-body{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f4f6;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
 }
 /* Style header*/
 header{
@@ -78,13 +81,13 @@ header button:active {
   transform: translateY(0);
 }
 /*Style book cards*/
-main{
-    min-height: 100%;
-    background-color: #F3F4F6;
-    padding: 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+main {
+  flex: 1 0 auto;
+  background-color: #f3f4f6;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
 }
 .book-card {
   min-height: 150px;
