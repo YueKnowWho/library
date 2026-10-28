@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css">
+    <script src = "script.js" defer></script>
+    <title>My Library</title>
+</head>
+<body>
+    <header>
+        <h1>My Library</h1>
+        <button id="add-book-button" type="button">+ Add Book</button>
+    </header>
+    <main class = "book-collection">
+        
+    </main>
+    <dialog id="book-dialog">
+        <form id="book-form">
+            <h2>Add a book</h2>
+
+            <label>
+                Title
+                <input name="title" type="text" required>
+            </label>
+
+            <label>
+                Author
+                <input name="author" type="text" required>
+            </label>
+
+            <label>
+                Pages
+                <input name="pages" type="number" min="1" required>
+            </label>
+
+            <label class="toggle form-toggle">
+                <span class="toggle-label">Read</span>
+                <input name="read" type="checkbox">
+                <span class="toggle-slider"></span>
+            </label>
+
+            <div class="form-actions">
+                <button id="cancel-button" type="button">Cancel</button>
+                <button type="submit">Add Book</button>
+            </div>
+        </form>
+    </dialog>
+    <dialog id="edit-book-dialog">
+        <form id="edit-book-form">
+            <h2>Edit book</h2>
+
+            <label>
+                Title
+                <input name="title" type="text" required>
+            </label>
+
+            <label>
+                Author
+                <input name="author" type="text" required>
+            </label>
+
+            <label>
+                Pages
+                <input name="pages" type="number" min="1" required>
+            </label>
+
+            <label class="toggle form-toggle">
+                <span class="toggle-label">Read</span>
+                <input name="read" type="checkbox">
+                <span class="toggle-slider"></span>
+            </label>
+
+            <div class="form-actions">
+                <button id="cancel-edit-button" type="button">Cancel</button>
+                <button type="submit">Save Changes</button>
+            </div>
+        </form>
+    </dialog>
+</body>
+</html>
