@@ -159,6 +159,10 @@ function seedLibrary() {
         ["The Great Gatsby", "F. Scott Fitzgerald", 180, false],
         ["Dune", "Frank Herbert", 412, false],
         ["To Kill a Mockingbird", "Harper Lee", 281, true],
+        ["The Name of the Wind", "Patrick Rothfuss", 662, false],
+        ["The Catcher in the Rye", "J.D. Salinger", 214, true],
+        ["The Alchemist", "Paulo Coelho", 208, false],
+        ["The Book Thief", "Markus Zusak", 552, true],
     ];
 
     for (const [title, author, pages, read] of books) {
